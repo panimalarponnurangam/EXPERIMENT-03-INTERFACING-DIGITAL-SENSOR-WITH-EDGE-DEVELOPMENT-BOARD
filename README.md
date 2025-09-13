@@ -3,7 +3,7 @@
 ---
 
 ### **NAME:Panimalar P**  
-### **DEPARTMENT:N.E-CSE(IoT)**  
+### **DEPARTMENT:B.E-CSE(IoT)**  
 ### **ROLL NO:212222110031**  
 ### **DATE OF EXPERIMENT:**  
 
