@@ -100,7 +100,8 @@ while True:
  
 
 The serial monitor displays the real-time temperature and humidity values as shown below:
-<img width="275" height="319" alt="image" src="https://github.com/user-attachments/assets/0a4ebe1a-60ef-4024-88d1-5a51b53253e2" />
+
+<img src="https://github.com/user-attachments/assets/0a4ebe1a-60ef-4024-88d1-5a51b53253e2" >
 
   
 
