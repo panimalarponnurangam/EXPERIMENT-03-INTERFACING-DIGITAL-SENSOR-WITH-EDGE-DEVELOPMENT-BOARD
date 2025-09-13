@@ -2,9 +2,9 @@
  
 ---
 
-### **NAME:**  
-### **DEPARTMENT:**  
-### **ROLL NO:**  
+### **NAME:Panimalar P**  
+### **DEPARTMENT:N.E-CSE(IoT)**  
+### **ROLL NO:212222110031**  
 ### **DATE OF EXPERIMENT:**  
 
 ---
@@ -54,7 +54,10 @@ The sensor measures **temperature using a thermistor** and **humidity using a ca
 ---
 
 ## **CIRCUIT DIAGRAM:**  
+<img width="667" height="520" alt="image" src="https://github.com/user-attachments/assets/74ce0b52-5f3d-45d0-b19b-17cb627aae2c" />
+
 ### **Connections:**  
+
 
 | DHT22 Pin | Raspberry Pi Pico Pin |
 |-----------|----------------------|
@@ -67,12 +70,36 @@ The sensor measures **temperature using a thermistor** and **humidity using a ca
 
 ## **PROGRAM (MicroPython)**  
 ``` ```
+import machine
+import dht
+import time
 
+# Define DHT sensor pin
+dht_pin = machine.Pin(28)
+dht_sensor = dht.DHT22(dht_pin)
+
+while True:
+    try:
+        # Measure temperature and humidity
+        dht_sensor.measure()
+        temperature_celsius = dht_sensor.temperature()
+        humidity_percent = dht_sensor.humidity()
+
+        # Print results
+        print("Temperature: {:.2f} °C".format(temperature_celsius))
+        print("Humidity: {:.2f} %".format(humidity_percent))
+
+    except Exception as e:
+        print("Error reading DHT:", str(e))
+
+    time.sleep(1)  # delay 1 second between readings
 ---
 
 ## **OUTPUT:**  
  
 ---
+The serial monitor displays the real-time temperature and humidity values as shown below:
+<img width="275" height="319" alt="image" src="https://github.com/user-attachments/assets/0a4ebe1a-60ef-4024-88d1-5a51b53253e2" />
 
   
 ---
