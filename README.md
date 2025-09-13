@@ -69,7 +69,7 @@ The sensor measures **temperature using a thermistor** and **humidity using a ca
 ---
 
 ## **PROGRAM (MicroPython)**  
-``` ```
+``` 
 import machine
 import dht
 import time
@@ -93,16 +93,17 @@ while True:
         print("Error reading DHT:", str(e))
 
     time.sleep(1)  # delay 1 second between readings
+````
 ---
 
 ## **OUTPUT:**  
  
----
+
 The serial monitor displays the real-time temperature and humidity values as shown below:
 <img width="275" height="319" alt="image" src="https://github.com/user-attachments/assets/0a4ebe1a-60ef-4024-88d1-5a51b53253e2" />
 
   
----
+
 
 ## **RESULT:**  
 The **DHT22 sensor** was successfully interfaced with the **Raspberry Pi Pico**, and real-time **temperature and humidity data** were read and displayed. The LEDs responded correctly when the threshold limits were exceeded.
